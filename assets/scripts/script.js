@@ -13,3 +13,31 @@ function closeNavigationMenu(){
     document.getElementById("responsive-menu").style.height = "0";
     console.log("closeNavigationMenu ran");
 }
+
+if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+} else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+    }
+}
+
+let slides = document.querySelectorAll('#slides .slide');
+let currentSlide = 0;
+let slideInterval = setInterval(nextSlide,2000);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+
+let slidesA = document.querySelectorAll('#slides-a .slide-a');
+let currentSlideA = 0;
+let slideIntervalA = setInterval(nextSlideAnglesey,3000);
+
+function nextSlideAnglesey(){
+	slidesA[currentSlideA].className = 'slide-a';
+	currentSlideA = (currentSlideA+1)%slidesA.length;
+	slidesA[currentSlideA].className = 'slide-a showing-a';
+}

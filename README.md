@@ -16,3 +16,5 @@ Challenging myself to develop a fully responsive website in two hours.
 - Clearly separated sections with navigation to each section
 - Images showing the beauty of the area
 
+# Attributions
+- https://www.tripsavvy.com/guide-to-snowdonia-national-park-1662552 - snowdonia-range.jpg
