@@ -18,3 +18,4 @@ Challenging myself to develop a fully responsive website in two hours.
 
 # Attributions
 - https://www.tripsavvy.com/guide-to-snowdonia-national-park-1662552 - snowdonia-range.jpg
+- https://www.nicepng.com/downpng/u2r5r5u2a9i1r5a9_welsh-dragon-png/ welsh dragon logo
