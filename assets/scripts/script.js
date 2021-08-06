@@ -41,3 +41,13 @@ function nextSlideAnglesey(){
 	currentSlideA = (currentSlideA+1)%slidesA.length;
 	slidesA[currentSlideA].className = 'slide-a showing-a';
 }
+
+let slidesB = document.querySelectorAll('#slides-b .slide-b');
+let currentSlideB = 0;
+let slideIntervalB = setInterval(nextSlideBetws,3000);
+
+function nextSlideBetws(){
+	slidesB[currentSlideB].className = 'slide-b';
+	currentSlideB = (currentSlideB+1)%slidesB.length;
+	slidesB[currentSlideB].className = 'slide-b showing-b';
+}

@@ -273,12 +273,40 @@ a{
 	opacity: 1;
 	z-index: 2;
 }
+#slides-b{
+	position: relative;
+	height: 450px;
+    width: 800px;
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+}
+
+.slide-b{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	z-index: 1;
+
+	-webkit-transition: opacity 1s;
+	-moz-transition: opacity 1s;
+	-o-transition: opacity 1s;
+	transition: opacity 1s;
+}
+
+.showing-b{
+	opacity: 1;
+	z-index: 2;
+}
 .slide-img{
     width: 800px;
     height: 450px;
 }
 
-#snowdon, #anglesey{
+#snowdon, #anglesey, #betws-y-coed{
     width: 90%;
     margin: 50px auto;
     padding-top: 50px;
@@ -296,6 +324,8 @@ a{
 }
 .text-content{
     margin: 20px 50px;
+    overflow-x:auto;
+    overflow-wrap: break-word;
 }
 .text-content h3{
     font-size: 36px;
@@ -304,4 +334,91 @@ a{
 .text-content p{
     font-size: 24px;
     margin: 12px 0;
+}
+#form-filled-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#form-filled-content h1{
+    font-size: 80px;
+    margin: 10px;
+}
+#form-filled-content h3{
+    font-size: 50px;
+    margin: 10px;
+}
+#form-filled-content p{
+    margin-top: 100px;
+}
+
+#filled-return-button{
+    margin: 50px;
+    color:white;
+    background-color: #00ab39;
+    border: 2px solid #cc0001;
+    padding: 10px 25px;
+    border-radius: 15px;
+    font-size: 40px;
+    -webkit-box-shadow: 10px 10px 10px -4px #000000; 
+    box-shadow: 10px 10px 10px -4px #000000;
+}
+#contact, #contact-form-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 60%;
+    border: 1px solid #cc0001;
+    border-radius: 20px;
+    background-color: #00ab39;
+    color: white;
+    -webkit-box-shadow: 10px 10px 10px -4px #000000; 
+    box-shadow: 10px 10px 10px -4px #000000;
+    font-size: 22px;
+    padding: 20px;
+}
+#contact-form input{
+    width: 60%;
+    text-align: left;
+    height: 35px;
+    padding: 0 15px;
+    border-radius: 15px;
+    border: 1px solid #cc0001;
+}
+#contact-form textarea{
+    width: 60%;
+    height: 250px;
+    font-size: 20px;
+    border: 1px solid #cc0001;
+    border-radius: 15px;
+}
+#contact-form button{
+    width: 40%;
+    height: 60px;
+    border: 1px solid #000000;
+    background-color: #cc0001;
+    border-radius: 15px;
+    margin-top: 25px;
+    padding: 10px 25px;
+    font-size: 28px;
+    color: white;
+    transition: 0.5s;
+}
+#contact-form button:hover{
+    -webkit-box-shadow: 10px 10px 10px -4px #000000; 
+    box-shadow: 10px 10px 10px -4px #000000;
+    font-size: 32px;
 }
